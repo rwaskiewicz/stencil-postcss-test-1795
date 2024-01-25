@@ -10,5 +10,3 @@ npm ci \
 
 I was able to modify https://github.com/rwaskiewicz/stencil-postcss-test-1795/blob/main/src/common/_variable.css's `font-color`
 locally on a mac and have it propagate to the served component.
-
-Perhaps this is a Win issue...
