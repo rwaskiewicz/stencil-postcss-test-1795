@@ -1,7 +1,10 @@
 import { Config } from '@stencil/core';
-
+import { postcss} from '@stencil-community/postcss';
 export const config: Config = {
   namespace: 'post-css-test',
+  plugins: [
+    postcss({}),
+  ],
   outputTargets: [
     {
       type: 'dist',
@@ -21,4 +24,5 @@ export const config: Config = {
   testing: {
     browserHeadless: "new",
   },
+  globalStyle:'src/common/global.css'
 };
